@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/thumb_nail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:contentDescription="@string/thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/cover_for_design" />
+
+    <eth.social.like_button.LikeButton
+        android:id="@+id/upvote"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/number_of_likes"
+        app:like_button_activeImage="@drawable/ic_heart_filled"
+        app:like_button_animationSpeed="1.5"
+        app:like_button_iconSize="24dp"
+        app:like_button_inActiveImage="@drawable/ic_heart_outlined" />
+
+    <TextView
+        android:id="@+id/number_of_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginBottom="25dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="234" />
+</androidx.constraintlayout.widget.ConstraintLayout>

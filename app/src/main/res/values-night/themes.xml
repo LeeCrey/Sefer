@@ -1,0 +1,35 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Sefer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!--    PRIMARY    -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimaryContainer">#001B3C</item>
+
+        <!--   SECONDARY     -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">#004C6C</item>
+        <item name="colorOnSecondaryContainer">#C7E7FF</item>
+
+        <!--   TERNARY     -->
+        <item name="colorTertiary">#85CFFF</item>
+        <item name="colorOnTertiary">#00344C</item>
+        <item name="colorTertiaryContainer">#004C6C</item>
+        <item name="colorOnTertiaryContainer">#C7E7FF</item>
+
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:windowBackground">@color/surface</item>
+        <item name="android:textColorLink">@color/link</item>
+
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/txtColorOnSurface</item>
+        <item name="colorOnSurfaceVariant">#C4C6CF</item>
+        <item name="colorSurfaceVariant">#43474E</item>
+
+        <!--        <item name="android:statusBarColor">#00344C</item>-->
+        <item name="android:statusBarColor">?colorSurface</item>
+        <item name="android:navigationBarColor">?colorSurface</item>
+    </style>
+</resources>

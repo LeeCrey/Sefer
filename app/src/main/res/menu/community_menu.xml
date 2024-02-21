@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_create_post"
+        android:icon="@drawable/ic_add"
+        android:title="@string/add_post"
+        app:iconTint="?android:textColorPrimary"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/ic_edit"
+        android:title="@string/lbl_edit"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/info"
+        android:title="@string/info" />
+
+    <item
+        android:id="@+id/leave"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/leave" />
+</menu>

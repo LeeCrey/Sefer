@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="snackbar" parent="Widget.MaterialComponents.Snackbar">
+    <item name="backgroundTint">?colorPrimary</item>
+    <item name="elevation">0dp</item>
+    <item name="android:textColor">?colorOnPrimary</item>
+  </style>
+
+  <style name="snackbarButton" parent="Widget.MaterialComponents.Snackbar">
+    <item name="android:textColor">?colorOnPrimary</item>
+  </style>
+
+  <style name="Theme.App.PopupMenu" parent="Widget.AppCompat.PopupMenu">
+    <item name="android:textColor">?android:textColorPrimary</item>
+    <item name="android:backgroundTint">?colorSurface</item>
+    <item name="android:fontFamily">@font/roboto_regular</item>
+    <item name="android:elevation">0dp</item>
+  </style>
+
+  <style name="TextAppearance.Subhead1" parent="@style/TextAppearance.AppCompat.Body1">
+    <item name="android:textSize">14sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:fontFamily">sans-serif</item>
+  </style>
+
+  <style name="TextStyleSubhead1" parent="">
+    <item name="android:textAppearance">@style/TextAppearance.Subhead1</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+  </style>
+
+  <style name="Toolbar" parent="ThemeOverlay.Material3.Toolbar.Surface">
+    <item name="titleTextColor">?colorOnPrimary</item>
+    <item name="android:background">?attr/colorSecondary</item>
+    <item name="colorControlNormal">?attr/colorOnSecondary</item>
+  </style>
+
+  <style name="SurfaceToolbar" parent="ThemeOverlay.Material3.Toolbar.Surface">
+    <item name="android:background">?attr/colorSurface</item>
+    <item name="colorControlNormal">?android:textColorPrimary</item>
+  </style>
+
+  <style name="ChipTextAppearance" parent="TextAppearance.MaterialComponents.Chip">
+    <item name="android:textColor">?colorOnPrimary</item>
+    <item name="android:textSize">12sp</item>
+  </style>
+
+  <!--  TAB  -->
+  <style name="custom_tab" parent="Widget.Design.TabLayout">
+    <item name="tabPaddingStart">0dp</item>
+    <item name="tabPaddingEnd">0dp</item>
+    <item name="tabPaddingTop">0dp</item>
+    <item name="android:textSize">15sp</item>
+    <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    <item name="tabTextAppearance">@style/TabTextAppearance</item>
+    <item name="android:background">?colorSurface</item>
+  </style>
+
+  <style name="TransparentDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="android:windowBackground">@android:color/transparent</item>
+  </style>
+
+  <style name="form_field" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_margin">@dimen/margin_16</item>
+  </style>
+
+  <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+    <item name="textAllCaps">false</item>
+  </style>
+
+  <style name="title">
+    <item name="fontFamily">@font/roboto_bold</item>
+    <item name="android:textSize">22sp</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+
+  <style name="fullName">
+    <item name="android:textSize">16sp</item>
+    <item name="fontFamily">@font/roboto_bold</item>
+    <item name="android:maxEms">13</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:layout_marginStart">5dp</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">-3dp</item>
+  </style>
+
+  <style name="username">
+    <item name="android:textSize">14sp</item>
+    <item name="android:layout_width">100dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:maxWidth">100dp</item>
+    <item name="android:visibility">gone</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:layout_marginStart">7dp</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+  <style name="badge">
+    <item name="android:id">@id/badge</item>
+    <item name="android:layout_width">16dp</item>
+    <item name="android:layout_height">16dp</item>
+    <item name="tint">?colorPrimary</item>
+    <item name="android:layout_marginStart">5dp</item>
+    <item name="android:visibility">gone</item>
+    <item name="android:src">@drawable/ic_verified</item>
+  </style>
+
+  <style name="generalTextTitleStyle" parent="">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/roboto_regular</item>
+    <item name="android:textSize">@dimen/font_16</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:padding">@dimen/margin_8</item>
+  </style>
+
+  <style name="user_profile">
+    <item name="android:layout_width">35dp</item>
+    <item name="android:layout_height">35dp</item>
+  </style>
+
+  <style name="custom_un_elevated_button" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+    <item name="android:padding">13dp</item>
+    <item name="textAllCaps">false</item>
+  </style>
+
+  <style name="custom_btn" parent="Widget.MaterialComponents.Button">
+    <item name="android:padding">13dp</item>
+    <item name="textAllCaps">false</item>
+  </style>
+
+  <style name="cornered_button" parent="custom_btn">
+    <item name="cornerRadius">15dp</item>
+  </style>
+
+  <style name="outlined_button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <item name="android:padding">13dp</item>
+    <item name="textAllCaps">false</item>
+  </style>
+
+  <!--  TELEGRAM  -->
+  <style name="dividerStyle" parent="">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:layout_marginBottom">@dimen/margin_8</item>
+    <item name="android:layout_marginTop">@dimen/margin_8</item>
+    <item name="dividerColor">@color/border</item>
+    <item name="android:layout_marginStart">45dp</item>
+  </style>
+
+  <style name="appBarIconsStyle" parent="">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginStart">@dimen/margin_16</item>
+    <item name="android:layout_marginTop">@dimen/margin_16</item>
+    <item name="android:tint">?colorOnSecondary</item>
+  </style>
+
+  <style name="generalTextSubtitleStyle" parent="">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/roboto_regular</item>
+    <item name="android:textSize">@dimen/font_16</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+    <item name="android:padding">@dimen/margin_8</item>
+    <item name="drawableTint">?android:textColorPrimary</item>
+  </style>
+
+  <style name="generalTextHintStyle" parent="generalTextSubtitleStyle">
+    <item name="android:textColor">@color/md_theme_light_outline</item>
+    <item name="android:textSize">@dimen/font_14</item>
+  </style>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/settings_nav.xml"
+  app:startDestination="@id/navigation_settings_land">
+
+  <fragment
+    android:id="@+id/navigation_settings_land"
+    android:name="eth.social.sefer.ui.view.settings.SettingsLand"
+    tools:layout="@layout/settings_land">
+    <action
+      android:id="@+id/open_account_settings"
+      app:destination="@id/navigation_account_settings"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/slide_out_left"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/slide_out_right" />
+    <action
+      android:id="@+id/open_blocked_user_list"
+      app:destination="@id/navigation_blocked_users"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/slide_out_left"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/slide_out_right" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/navigation_account_settings"
+    android:name="eth.social.sefer.ui.view.settings.AccountSettings"
+    android:label="@string/account"
+    tools:layout="@layout/settings_account">
+    <action
+      android:id="@+id/open_change_password"
+      app:destination="@id/navigation_change_password"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/slide_out_left"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/slide_out_right" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/navigation_blocked_users"
+    android:name="eth.social.sefer.ui.view.fragments.BlockedUsersFragment"
+    android:label="@string/lbl_blocked_list"
+    tools:layout="@layout/f_list_raw" />
+
+  <dialog
+    android:id="@+id/navigation_loading"
+    android:name="eth.social.sefer.ui.view.dialogs.LoadingDialog"
+    tools:layout="@layout/d_loading" />
+
+  <fragment
+    android:id="@+id/navigation_change_password"
+    android:name="eth.social.sefer.ui.view.settings.PwdChangeFragment"
+    android:label="@string/lbl_change_pwd"
+    tools:layout="@layout/f_password" />
+
+  <dialog
+    android:id="@+id/navigation_logout"
+    android:name="eth.social.sefer.ui.view.dialogs.LogoutDialog"
+    tools:layout="@layout/d_logout" />
+
+  <dialog
+    android:id="@+id/navigation_language"
+    android:name="eth.social.sefer.ui.view.dialogs.LanguageDialog"
+    tools:layout="@layout/d_language" />
+</navigation>

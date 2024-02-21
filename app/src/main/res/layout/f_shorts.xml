@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:clipToPadding="false"
+  android:fitsSystemWindows="true"
+  tools:context=".ui.view.fragments.ShortVideosFragment">
+
+  <androidx.viewpager2.widget.ViewPager2
+    android:id="@+id/recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/video"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    tools:listitem="@layout/l_short_video" />
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

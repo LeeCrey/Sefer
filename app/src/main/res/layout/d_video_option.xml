@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bottom_sheet_bg"
+    android:padding="@dimen/margin_16"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    tools:context=".ui.view.dialogs.VideoOptionDialog">
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        app:dividerThickness="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/save"
+        style="@style/generalTextTitleStyle"
+        android:layout_marginTop="@dimen/margin_8"
+        android:drawablePadding="@dimen/margin_16"
+        android:text="@string/save"
+        android:visibility="gone"
+        app:drawableTint="?android:textColorPrimary"
+        app:layout_constraintBottom_toTopOf="@id/copy_link"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/copy_link"
+        style="@style/generalTextTitleStyle"
+        android:layout_marginTop="@dimen/margin_8"
+        android:drawablePadding="@dimen/margin_16"
+        android:text="@string/copy_link"
+        app:drawableTint="?android:textColorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/save" />
+
+    <TextView
+        android:id="@+id/report"
+        style="@style/generalTextTitleStyle"
+        android:layout_marginTop="@dimen/margin_8"
+        android:drawablePadding="@dimen/margin_16"
+        android:text="@string/report"
+        android:visibility="gone"
+        app:drawableTint="?android:textColorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/copy_link"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.settings.AccountSettings">
+
+    <include layout="@layout/l_toolbar" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_bar_layout">
+
+        <TextView
+            android:id="@+id/change_password"
+            style="@style/generalTextSubtitleStyle"
+            android:drawablePadding="@dimen/margin_16"
+            android:text="@string/lbl_change_pwd"
+            app:drawableStartCompat="@drawable/change_password" />
+
+        <com.google.android.material.divider.MaterialDivider style="@style/dividerStyle" />
+
+        <TextView
+            android:id="@+id/change_visibility"
+            style="@style/generalTextSubtitleStyle"
+            android:drawablePadding="@dimen/margin_16"
+            android:text="@string/lbl_visiblity"
+            app:drawableStartCompat="@drawable/ic_eye" />
+
+        <com.google.android.material.divider.MaterialDivider style="@style/dividerStyle" />
+
+        <TextView
+            android:id="@+id/deactivate_account"
+            style="@style/generalTextSubtitleStyle"
+            android:drawablePadding="@dimen/margin_16"
+            android:text="@string/lbl_deactivate_account"
+            app:drawableStartCompat="@drawable/ic_delete" />
+
+        <com.google.android.material.divider.MaterialDivider style="@style/dividerStyle" />
+
+        <TextView
+            android:id="@+id/delete_account"
+            style="@style/generalTextSubtitleStyle"
+            android:drawablePadding="@dimen/margin_16"
+            android:text="@string/lbl_delete_account"
+            app:drawableStartCompat="@drawable/ic_delete" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

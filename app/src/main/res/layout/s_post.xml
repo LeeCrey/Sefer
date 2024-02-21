@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="4dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile_picture"
+        style="@style/user_profile"
+        android:transitionName="image_to_see"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/cover_for_design" />
+
+    <TextView
+        android:id="@+id/user_full_name"
+        style="@style/fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        app:layout_constraintStart_toEndOf="@id/user_profile_picture"
+        app:layout_constraintTop_toTopOf="@id/user_profile_picture"
+        tools:text="@string/sample_full_name" />
+
+    <TextView
+        android:id="@+id/user_name"
+        style="@style/username"
+        app:layout_constraintStart_toEndOf="@id/user_profile_picture"
+        app:layout_constraintTop_toBottomOf="@id/user_full_name"
+        tools:text="@string/sample_user"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/badge"
+        style="@style/badge"
+        app:layout_constraintBottom_toBottomOf="@id/user_full_name"
+        app:layout_constraintStart_toEndOf="@id/user_full_name"
+        app:layout_constraintTop_toTopOf="@id/user_full_name"
+        tools:ignore="contentDescription"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/created_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_8"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:padding="2dp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@id/user_full_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/user_full_name"
+        tools:text="@string/sample_ago_time" />
+
+    <TextView
+        android:id="@+id/post_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_profile_picture"
+        tools:text="@string/sample_long_text" />
+
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="0dp"
+        android:layout_height="550dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="centerCrop"
+        android:transitionName="image_to_see"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/post_content"
+        tools:ignore="contentDescription"
+        tools:src="@drawable/cover_for_design"
+        tools:visibility="visible" />
+
+    <eth.social.like_button.LikeButton
+        android:id="@+id/upvote"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/post_image"
+        app:like_button_activeImage="@drawable/ic_heart_filled"
+        app:like_button_animationSpeed="1.5"
+        app:like_button_iconSize="24dp"
+        app:like_button_inActiveImage="@drawable/ic_heart_outlined" />
+
+    <ImageView
+        android:id="@+id/comments_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:contentDescription="@null"
+        android:padding="3dp"
+        android:scaleX="1.1"
+        android:src="@drawable/ic_comment"
+        app:layout_constraintBottom_toBottomOf="@id/upvote"
+        app:layout_constraintStart_toEndOf="@id/upvote"
+        app:layout_constraintTop_toTopOf="@id/upvote"
+        app:tint="?android:textColorPrimary" />
+
+    <TextView
+        android:id="@+id/number_of_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@id/upvote"
+        app:layout_constraintEnd_toStartOf="@id/subresource_count"
+        app:layout_constraintTop_toTopOf="@id/upvote"
+        tools:text="@string/sample_likes_count" />
+
+    <ImageView
+        android:id="@+id/separator"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:contentDescription="@string/separator"
+        android:src="@drawable/ic_circle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/upvote"
+        app:layout_constraintEnd_toStartOf="@id/subresource_count"
+        app:layout_constraintStart_toEndOf="@id/number_of_likes"
+        app:layout_constraintTop_toTopOf="@id/upvote"
+        app:tint="?android:textColorSecondary"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/subresource_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@id/upvote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/upvote"
+        tools:text="@string/sample_comments_count" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:dividerColor="@color/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/number_of_likes" />
+</androidx.constraintlayout.widget.ConstraintLayout>

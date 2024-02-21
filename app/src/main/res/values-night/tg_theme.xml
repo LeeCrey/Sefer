@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Telegram" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#50a7ea</item>
+        <item name="colorPrimaryVariant">@color/primaryDark</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+
+        <!--    Secondary    -->
+        <item name="colorSecondary">#89bae2</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!--    SURFACE    -->
+        <item name="colorSurface">#1d2733</item>
+
+        <!--        -->
+        <item name="android:textColorPrimary">#ecedef</item>
+        <item name="android:statusBarColor">#111820</item>
+        <item name="android:navigationBarColor">?colorPrimaryVariant</item>
+        <item name="android:windowBackground">#151e27</item>
+        <item name="android:textColorLink">#89bae2</item>
+
+        <item name="colorControlNormal">?attr/colorOnPrimary</item>
+    </style>
+</resources>

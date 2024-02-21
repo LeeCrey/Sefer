@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+  <Transition
+    motion:constraintSetEnd="@+id/end"
+    motion:constraintSetStart="@id/start"
+    motion:duration="1000">
+    <KeyFrameSet />
+
+    <OnSwipe
+      motion:dragDirection="dragUp"
+      motion:touchAnchorId="@+id/app_bar_container"
+      motion:touchAnchorSide="bottom" />
+  </Transition>
+
+  <ConstraintSet android:id="@+id/start">
+    <Constraint
+      android:id="@+id/app_bar_container"
+      android:layout_width="match_parent"
+      android:layout_height="350dp"
+      motion:layout_constraintEnd_toEndOf="parent"
+      motion:layout_constraintStart_toStartOf="parent"
+      motion:layout_constraintTop_toTopOf="parent" />
+    <Constraint
+      android:id="@+id/profile_name"
+      android:layout_width="@dimen/zero_dimens"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      motion:layout_constraintBottom_toTopOf="@id/profile_status"
+      motion:layout_constraintStart_toStartOf="@id/app_bar_container">
+      <CustomAttribute
+        motion:attributeName="textSize"
+        motion:customFloatValue="28" />
+    </Constraint>
+    <Constraint
+      android:id="@+id/profile_pic"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      motion:layout_constraintBottom_toBottomOf="@id/app_bar_container"
+      motion:layout_constraintEnd_toEndOf="@id/app_bar_container"
+      motion:layout_constraintTop_toTopOf="@id/app_bar_container">
+      <CustomAttribute
+        motion:attributeName="roundPercent"
+        motion:customFloatValue="0" />
+    </Constraint>
+    <Constraint
+      android:id="@+id/profile_status"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/zero_dimens"
+      android:layout_marginBottom="16dp"
+      motion:layout_constraintBottom_toBottomOf="@id/app_bar_container"
+      motion:layout_constraintStart_toStartOf="@id/profile_name">
+      <CustomAttribute
+        motion:attributeName="textSize"
+        motion:customFloatValue="16" />
+    </Constraint>
+  </ConstraintSet>
+
+  <ConstraintSet android:id="@+id/end">
+    <Constraint
+      android:id="@+id/app_bar_container"
+      android:layout_width="match_parent"
+      android:layout_height="?actionBarSize"
+      motion:layout_constraintEnd_toEndOf="parent"
+      motion:layout_constraintStart_toStartOf="parent"
+      motion:layout_constraintTop_toTopOf="parent" />
+    <Constraint
+      android:id="@+id/profile_name"
+      android:layout_width="@dimen/zero_dimens"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      motion:layout_constraintBottom_toTopOf="@id/profile_status"
+      motion:layout_constraintStart_toEndOf="@id/profile_pic"
+      motion:layout_constraintTop_toTopOf="parent">
+      <CustomAttribute
+        motion:attributeName="textSize"
+        motion:customFloatValue="18" />
+    </Constraint>
+    <Constraint
+      android:id="@+id/profile_pic"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="50dp"
+      motion:layout_constraintBottom_toBottomOf="@id/app_bar_container"
+      motion:layout_constraintStart_toStartOf="parent"
+      motion:layout_constraintTop_toTopOf="@id/app_bar_container">
+      <CustomAttribute
+        motion:attributeName="roundPercent"
+        motion:customFloatValue="1.0" />
+    </Constraint>
+    <Constraint
+      android:id="@+id/profile_status"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/zero_dimens"
+      motion:layout_constraintBottom_toBottomOf="@id/profile_pic"
+      motion:layout_constraintStart_toStartOf="@id/profile_name">
+      <CustomAttribute
+        motion:attributeName="textSize"
+        motion:customFloatValue="14" />
+    </Constraint>
+  </ConstraintSet>
+</MotionScene>

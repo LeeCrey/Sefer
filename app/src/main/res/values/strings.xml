@@ -1,0 +1,338 @@
+<resources>
+    <string name="app_name" translatable="false">Sefer</string>
+    <string name="app_translatable_name">Sefer</string>
+
+    <string name="default_coin_text" translatable="false">Coins: 0</string>
+    <string name="impossible_game" translatable="false">Impossible Game</string>
+    <string name="more_menu" translatable="false">More</string>
+    <string name="privacy_settings" translatable="false">Privacy Settings</string>
+    <string name="retry_button_text" translatable="false">Retry</string>
+    <string name="watch_video_button_text" translatable="false">Watch Video for 10 additional coins</string>
+
+    <!--  URLS  -->
+    <string name="following_user_url" translatable="false">api/v1/users/%1d/followings</string>
+    <string name="followers_user_url" translatable="false">api/v1/users/%1d/followers</string>
+    <string name="developer" translatable="false">https://instagram.com/lee_crey_116?igshid=NTc4MTIwNjQ2YQ==</string>
+    <string name="tiktok_url" translatable="false">https://tiktok.com/@et_matrix</string>
+    <string name="telegram_url" translatable="false">https://t.me/matrix_et</string>
+
+    <string name="asset_statements" translatable="false">
+[{
+  \"include\": \"https://sefer.onrender.com/.well-known/assetlinks.json\"
+}]
+</string>
+
+    <string name="confirm_fingerprint">Confirm fingerprint to continue</string>
+
+    <!--    LOCALES-->
+    <string name="amharic" translatable="false">አማርኛ</string>
+    <string name="english" translatable="false">English</string>
+    <string name="oromo" translatable="false">Afaan Oromoo</string>
+    <string name="tigre" translatable="false">ትግርኛ</string>
+    <string name="somali" translatable="false">Af Somali</string>
+
+    <!--    TIME AGO -->
+    <string name="time_now">now</string>
+    <string name="time_minutes_ago">%1$d m</string>
+    <string name="time_hours_ago">%1$d h</string>
+    <string name="time_days_ago">%1$d d</string>
+    <string name="time_weeks_ago">%1$d w</string>
+
+    <string name="username" translatable="false">\@%1$s</string>
+    <string name="readable_price">%1$.2f ETB</string>
+    <string name="likes_count">%1$s likes</string>
+    <string name="comments_count">%1$s comments</string>
+    <string name="members">%1$d members</string>
+    <string name="member">%1$d member</string>
+
+    <string name="home" translatable="false">Home</string>
+    <string name="shorts">Shorts</string>
+    <string name="search">Search</string>
+    <string name="you" translatable="false">You</string>
+    <string name="community">Community</string>
+    <string name="chats">Chats</string>
+    <string name="profile" translatable="false">Profile</string>
+    <string name="lbl_setting">Settings</string>
+    <string name="notification">Notifications</string>
+    <string name="others">Others</string>
+    <string name="lbl_rate">Rate</string>
+    <string name="share">Share</string>
+    <string name="search_people">Search People</string>
+    <string name="mute">Mute</string>
+    <string name="upload">Upload</string>
+    <string name="toggle" translatable="false">Toggle</string>
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+    <string name="lbl_post">Post</string>
+    <string name="wats_on_your_mind">Speak your mind…</string>
+    <string name="new_post">Create Post</string>
+    <string name="block_user">Block User</string>
+    <string name="select_country">Country</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="don_not_match">Don\'t match</string>
+    <string name="please_select_country">Please select country</string>
+    <string name="pwd_length_error">At least 6 characters long</string>
+    <string name="delete">Delete</string>
+    <string name="connection_required">Internet connection required</string>
+    <string name="clear_all">Clear all</string>
+    <string name="mark_all_read">Mark all read</string>
+    <string name="report">Report</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="remove">Delete</string>
+    <string name="comments">Comments</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="video_play_error">Video playing error</string>
+    <string name="connection_error">Connection Error!</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="connection_error_redo">Connection Error. Please, retry!</string>
+    <string name="comment">Comment</string>
+    <string name="thought_msg">Share your thought</string>
+    <string name="be_the_first">No comments at the moment. Be the first to comment!</string>
+    <string name="replies">Replies</string>
+    <string name="followers">Followers</string>
+    <string name="followings">Following</string>
+    <string name="msg_connection_error">Connection Error</string>
+    <string name="msg_not_connected">Please check your internet connection.</string>
+    <string name="lbl_wifi">Wifi</string>
+    <string name="btn_data">Mobile Data</string>
+    <string name="log_out_msg">Do you really want to logout?</string>
+    <string name="btn_no">No</string>
+    <string name="yes">Yeah</string>
+    <string name="required">required</string>
+    <string name="posts">Posts</string>
+    <string name="loading">Loading More</string>
+    <string name="liked_by">Liked By</string>
+    <string name="videos">Videos</string>
+    <string name="user_info">User Info</string>
+    <string name="write_your_bio">Write your bio</string>
+    <string name="edit_bio">Edit Bio</string>
+    <string name="joined">Joined</string>
+    <string name="available">Available</string>
+    <string name="save">Save</string>
+    <string name="add_tag">Add Tag</string>
+    <string name="tag">Tag</string>
+    <string name="community_cover">Community Cover</string>
+    <string name="community_name">Community Name</string>
+    <string name="description">Description(optional)</string>
+    <string name="community_type">Community Type</string>
+    <string name="lbl_public">Public</string>
+    <string name="lbl_private">Private</string>
+    <string name="number_of_description" translatable="false">0/255</string>
+    <string name="market">Market</string>
+    <string name="job_search">Search Jobs</string>
+    <string name="lbl_help">Help</string>
+    <string name="copy_link">Copy Link</string>
+    <string name="content_description" translatable="false">Product Image</string>
+
+    <string name="categories">Categories</string>
+    <string name="lbl_recommended">Recommended</string>
+    <string name="product_detail">Product Detail</string>
+
+    <string name="terms_and_condition">By using the app, you agree to the </string>
+    <string name="lbl_new_password_req">New Password</string>
+    <string name="lbl_confirm_password">Confirm Password</string>
+    <string name="choose_new_password">Choose a new password</string>
+    <string name="lbl_current_password">Current Password</string>
+    <string name="privacy_and_policy" translatable="false"><b><a href="https://t.me/et_matrix/11">Terms of Use</a></b> and <b><a href="https://t.me/et_matrix/11">Privacy Policy</a></b></string>
+    <string name="instruction_msg">Enter the Email associated with your account and we will send %1$s link to your Email address.</string>
+    <string name="strong_password_msg">A strong password is a combination of letters, numbers and punctuation marks. Your password should at least be 6 characters long.</string>
+    <string name="confirm_2fa_msg">2FA Authentication Token has been sent to your account. Please copy and paste it here.</string>
+    <string name="update">Update</string>
+    <string name="lbl_confirm">Confirm Account</string>
+    <string name="btn_send">Send</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="lbl_login">Login</string>
+    <string name="lbl_account_locked">Unlock Account</string>
+    <string name="lbl_sign_up">Sign Up</string>
+    <string name="recover_account">Recover Account</string>
+    <string name="lbl_confirm_header">Account Not Confirmed?</string>
+    <string name="lbl_locked_header">Account Locked?</string>
+    <string name="open_email_app">Open Email</string>
+    <string name="skip">Skip I\'ll do latter</string>
+    <string name="lbl_full_name">Full Name</string>
+    <string name="msg_check_ur_email">Check Your Email</string>
+    <string name="or">Or</string>
+    <string name="sign_with_google">Sign In With Google</string>
+    <string name="motivation">Together we shine!</string>
+    <string name="copied">Copied</string>
+    <string name="bio_count" translatable="false">0/200</string>
+    <string name="separator" translatable="false">Separator</string>
+    <string name="try_using_password">Something went wrong. Try using password</string>
+    <string name="close_comments" translatable="false">Close comments</string>
+    <string name="submitting">Submitting …</string>
+    <string name="wait">Wait till the loading finish</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="send_to">Send To</string>
+    <string name="lbl_delete">Delete</string>
+    <string name="undo">Undo</string>
+    <string name="likes">Liked</string>
+    <string name="incorrect_file">File size must be less than or equal to 2 MB</string>
+
+    <!--  DESIGN PURPOSE  -->
+    <string name="sample_user" translatable="false">\@solly_redman</string>
+    <string name="sample_message" translatable="false">Hello there, how are you doing?</string>
+    <string name="sample_date" translatable="false">Nov 27, 2023</string>
+    <string name="sample_full_name" translatable="false">Solly Redman</string>
+    <string name="sample_ago_time" translatable="false">3 d</string>
+    <string name="sample_likes_count" translatable="false">1.43K</string>
+    <string name="sample_comments_count" translatable="false">256</string>
+    <string name="sample_zero" translatable="false">0</string>
+    <string name="sample_product_name" translatable="false">Samsung S22</string>
+    <string name="sample_long_text" translatable="false">With this modiﬁcation the instances of MainActivity are no longer.</string>
+
+    <string name="account">Account</string>
+    <string name="reload">Reload</string>
+    <string name="thumb">Thumbnail</string>
+    <string name="no_videos_for_now">Nothing to show for now!</string>
+    <string name="stories">Stories</string>
+    <string name="don_t_show">Don\'t show</string>
+    <string name="online">Online</string>
+    <string name="lbl_logout">Log Out</string>
+    <string name="lbl_language">Language</string>
+    <string name="lbl_blocked_list">Blocked Users</string>
+    <string name="lbl_delete_account">Delete Account</string>
+    <string name="lbl_feedback">Feedback</string>
+    <string name="lbl_dark_mode">Dark Mode</string>
+    <string name="lbl_notifications">Notifications</string>
+    <string name="lbl_change_pwd">Change Password</string>
+    <string name="lbl_deactivate_account">Deactivate Account</string>
+    <string name="lbl_visiblity">Visibility</string>
+    <string name="unblock">Unblock</string>
+    <string name="don_t_match">Don\'t match</string>
+    <string name="pwd_length">Password Length Error</string>
+
+    <string name="post_settings">Post Setting</string>
+    <string name="message">Message</string>
+    <string name="leave">Leave</string>
+    <string name="info">Info</string>
+    <string name="add_post">Add Post</string>
+    <string name="create">Create</string>
+    <string name="discover">Discover</string>
+    <string name="request_sent_wait">Join Request has been sent. Wait the response!</string>
+    <string name="read_more">Read More</string>
+    <string name="read_less">Read Less</string>
+    <string name="posted_in">Posted In</string>
+    <string name="gmail_not_installed">Count not able to find e-mail sender</string>
+    <string name="choose_email_client">Choose Email Client</string>
+    <string name="reward">Reward</string>
+    <string name="sign_in_with_saved_password">Sign in with</string>
+    <string name="choose">Choose</string>
+    <string name="you_have">You have</string>
+    <string name="points">Points</string>
+    <string name="watch_ads">Watch Ads and earn points!</string>
+    <string name="lbl_watch_ads">Watch</string>
+    <string name="advertise">Advertise</string>
+    <string name="unknown_credentials">Unexpected type of credential</string>
+    <string name="reply">Reply</string>
+    <string name="add_hash_tag">Add Hashtag</string>
+    <string name="add">Add</string>
+    <string name="done">Done</string>
+    <string name="sample_hashtag" translatable="false">#Africa #PanAfricanism</string>
+    <string name="discard">Discard?</string>
+    <string name="confirmation_msg">If you do, you\'ll lose all your changes</string>
+    <string name="change">Change</string>
+    <string name="re_open_the_app">Reopen the app</string>
+
+    <string name="post_post">Post</string>
+    <string name="post_comment">Post the Comment</string>
+    <string name="expand">Expand</string>
+    <string name="collapse">Collapse</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+  <string name="voice">Voice</string>
+    <string name="retry">Retry</string>
+</resources>

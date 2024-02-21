@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="video">#0D1219</color>
+    <color name="primaryDark">#202833</color>
+    <color name="link">#2AABEE</color>
+    <color name="border">#1E2235</color>
+    <color name="text_primary">#f0f1f3</color>
+    <color name="windows">#000711</color>
+
+    <!--   MESSAGE -->
+    <color name="incoming">#0c172d</color>
+    <color name="outgoing">#fff</color>
+
+    <!--  PRIMARY  -->
+    <color name="primary">#89bae2</color>
+    <color name="onPrimary">#fff</color>
+
+    <!--  SURFACE  -->
+    <!--    <color name="surface">#161d2d</color>-->
+    <color name="surface">#0c172d</color>
+    <color name="txtColorOnSurface">#d8dade</color>
+
+    <!--  SECONDARY  -->
+    <color name="secondary">#7db343</color>
+    <color name="onSecondary">#c4ccd8</color>
+
+    <color name="colorError">#dc5b5e</color>
+</resources>

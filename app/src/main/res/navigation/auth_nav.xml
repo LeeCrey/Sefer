@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/setup_nav.xml"
+  app:startDestination="@id/navigation_login">
+
+  <fragment
+    android:id="@+id/navigation_login"
+    android:name="eth.social.sefer.ui.view.auth_flow.LoginFragment"
+    android:label=""
+    tools:layout="@layout/f_login">
+    <action
+      android:id="@+id/open_instruction"
+      app:destination="@id/navigation_instruction"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/slide_out_left"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+      android:id="@+id/sign_up"
+      app:destination="@id/navigation_registrations"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/slide_out_left"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/slide_out_right" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/navigation_instruction"
+    android:name="eth.social.sefer.ui.view.auth_flow.InstructionFragment"
+    android:label="{lbl_name}"
+    tools:layout="@layout/f_instructions">
+    <argument
+      android:name="lbl_name"
+      android:defaultValue="Unlock Account"
+      app:argType="string" />
+    <argument
+      android:name="instruction_code"
+      android:defaultValue="1"
+      app:argType="integer" />
+
+    <action
+      android:id="@+id/open_operation_done"
+      app:destination="@id/navigation_instruction_done"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/slide_out_left"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/slide_out_right"
+      app:popUpTo="@id/navigation_instruction"
+      app:popUpToInclusive="true" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/navigation_instruction_done"
+    android:name="eth.social.sefer.ui.view.auth_flow.InstructionDoneFragment"
+    android:label="Done"
+    tools:layout="@layout/f_instruction_done">
+    <argument
+      android:name="msg"
+      app:argType="string" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/navigation_registrations"
+    android:name="eth.social.sefer.ui.view.auth_flow.SignUpFragment"
+    android:label="@string/lbl_sign_up"
+    tools:layout="@layout/f_sign_up">
+
+    <action
+      android:id="@+id/sign_up_done"
+      app:destination="@id/navigation_instruction_done"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/slide_out_left"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/slide_out_right"
+      app:popUpTo="@id/navigation_registrations"
+      app:popUpToInclusive="true" />
+  </fragment>
+
+  <dialog
+    android:id="@+id/navigation_loading"
+    android:name="eth.social.sefer.ui.view.dialogs.LoadingDialog"
+    tools:layout="@layout/d_loading" />
+</navigation>

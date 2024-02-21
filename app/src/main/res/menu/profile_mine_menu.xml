@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/open_chats"
+        android:icon="@drawable/ic_chats"
+        android:title="@string/chats"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/open_user_info"
+        android:title="@string/user_info"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/edit_bio"
+        android:title="@string/edit_bio"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/refresh"
+        android:title="@string/reload"
+        app:showAsAction="never" />
+</menu>

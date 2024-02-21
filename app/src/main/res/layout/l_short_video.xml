@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <androidx.media3.ui.PlayerView
+    android:id="@+id/video_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    app:auto_show="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:shutter_background_color="@color/video"
+    app:surface_type="texture_view"
+    app:use_controller="false" />
+
+  <ImageView
+    android:id="@+id/pause_resume"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:scaleX="2.0"
+    android:scaleY="2.0"
+    android:src="@drawable/ic_play"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:tint="@color/white"
+    tools:ignore="contentDescription" />
+
+  <ProgressBar
+    android:id="@+id/loading"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <eth.social.like_button.LikeButton
+    android:id="@+id/vote_icon"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="@dimen/margin_16"
+    app:layout_constraintBottom_toTopOf="@id/number_of_likes"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:like_button_activeImage="@drawable/ic_heart_filled"
+    app:like_button_animationSpeed="1.5"
+    app:like_button_iconSize="26dp"
+    app:like_button_inActiveImage="@drawable/ic_heart_outlined"
+    app:like_button_inActiveImageTint="@color/white" />
+
+  <TextView
+    android:id="@+id/number_of_likes"
+    android:layout_width="40dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="25dp"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    app:layout_constraintBottom_toTopOf="@id/comments"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:text="835" />
+
+  <ImageView
+    android:id="@+id/comments"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="5dp"
+    android:contentDescription="@string/comments"
+    android:padding="5dp"
+    android:src="@drawable/ic_comment"
+    app:layout_constraintBottom_toTopOf="@id/number_of_comments"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:tint="@color/white" />
+
+  <TextView
+    android:id="@+id/number_of_comments"
+    android:layout_width="40dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="20dp"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    app:layout_constraintBottom_toTopOf="@id/options"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:text="34" />
+
+  <ImageView
+    android:id="@+id/options"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    android:padding="5dp"
+    android:src="@drawable/ic_ellipsis_v"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:tint="@color/white"
+    tools:ignore="contentDescription" />
+
+  <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/user_profile_picture"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_marginStart="@dimen/margin_16"
+    android:layout_marginBottom="@dimen/margin_16"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:src="@drawable/cover_for_design" />
+
+  <TextView
+    android:id="@+id/user_name"
+    style="@style/username"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:fontFamily="@font/roboto_regular"
+    android:textColor="@color/white"
+    app:layout_constraintBottom_toTopOf="@id/user_full_name"
+    app:layout_constraintStart_toEndOf="@id/user_profile_picture"
+    tools:text="@string/sample_user" />
+
+  <TextView
+    android:id="@+id/user_full_name"
+    style="@style/fullName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:textColor="@color/white"
+    app:layout_constraintBottom_toBottomOf="@id/user_profile_picture"
+    app:layout_constraintStart_toEndOf="@id/user_profile_picture"
+    app:layout_constraintTop_toTopOf="@id/user_profile_picture"
+    tools:text="@string/sample_full_name" />
+
+  <ImageView
+    android:id="@+id/badge"
+    style="@style/badge"
+    android:contentDescription="@null"
+    app:layout_constraintBottom_toBottomOf="@id/user_full_name"
+    app:layout_constraintStart_toEndOf="@id/user_full_name"
+    app:layout_constraintTop_toTopOf="@id/user_full_name"
+    tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

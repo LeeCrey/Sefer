@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LikeButton">
+        <attr name="like_button_iconSize" format="dimension|reference" />
+        <attr name="like_button_activeImage" format="reference" />
+        <attr name="like_button_inActiveImage" format="reference" />
+        <attr name="like_button_primaryColor" format="reference" />
+        <attr name="like_button_secondaryColor" format="reference" />
+        <attr name="like_button_pressOnTouch" format="boolean" />
+        <attr name="like_button_animationSpeed" format="float" />
+        <attr name="like_button_activeImageTint" format="reference" />
+        <attr name="like_button_inActiveImageTint" format="reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    app:iconTint="?android:textColorPrimary"
+    tool:showIn="navigation_view">
+
+    <item
+        android:id="@+id/navigation_market"
+        android:icon="@drawable/ic_market"
+        android:title="@string/market" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/lbl_setting" />
+
+    <item
+        android:title="@string/others"
+        app:iconTint="?android:textColorPrimary">
+        <menu>
+            <item
+                android:id="@+id/item_help"
+                android:icon="@drawable/ic_help"
+                android:title="@string/lbl_help" />
+
+            <item
+                android:id="@+id/menu_item_rate_app"
+                android:icon="@drawable/ic_star"
+                android:title="@string/lbl_rate" />
+
+            <item
+                android:id="@+id/menu_item_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/share" />
+        </menu>
+    </item>
+</menu>
